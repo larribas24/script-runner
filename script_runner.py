@@ -38,15 +38,9 @@ def run():
     for t in range(len(tasks)):
         threads.append(MyThread(t, tasks[t]))
      
-    for t in range(len(tasks)):
-        threads[t].start()
-        
-    for t in range(len(tasks)):
-        threads[t].join()
-        print(f"Stopping {threads[t].path}..." )
-    
-    
-    print("Exiting Main Thread. No startup Python scripts running")
+    for t in threads:
+        t.start()
+    print("All programmed startup Python scripts running")
 
 if __name__ == '__main__':
 
