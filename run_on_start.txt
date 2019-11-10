@@ -1,0 +1,3 @@
+/Users/luisarribas/Desktop/script_1.py
+/Users/luisarribas/Desktop/script_2.py
+/Users/luisarribas/Desktop/script_3.py
